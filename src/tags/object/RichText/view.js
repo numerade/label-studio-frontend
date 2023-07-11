@@ -252,6 +252,8 @@ class RichTextPieceView extends Component {
     if (!item.inline) {
       this.dispose = observe(item, '_isReady', this.updateLoadingVisibility, true);
     }
+
+    this.renderMath();
   }
 
   componentWillUnmount() {
@@ -262,6 +264,14 @@ class RichTextPieceView extends Component {
     this.dispose?.();
     item.setLoaded(false);
     item.setReady(false);
+  }
+
+  componentDidUpdate() {
+    this.renderMath();
+  }
+
+  renderMath() {
+    window.MathJax.Hub.Queue(["Typeset",window.MathJax.Hub, this.loadingRef.current]);
   }
 
   markObjectAsLoaded() {
