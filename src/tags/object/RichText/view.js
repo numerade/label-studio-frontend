@@ -367,10 +367,10 @@ class RichTextPieceView extends Component {
     if (isText) {
       const cnLine = cn('richtext', { elem: 'line' });
 
-      val = htmlEscape(val)
-        .split(/\n|\r/g)
-        .map(s => `<span class="${cnLine}">${s}</span>`)
-        .join(newLineReplacement);
+      // val = htmlEscape(val)
+      //   .split(/\n|\r/g)
+      //   .map(s => `<span class="${cnLine}">${s}</span>`)
+      //   .join(newLineReplacement);
     }
 
     if (item.inline) {

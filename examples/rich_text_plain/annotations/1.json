@@ -22,7 +22,7 @@
         }
     ],
     "data": {
-        "ner": "$$\\cos x=-\\frac{5}{13}, \\quad x \\in\\left[\\frac{\\pi}{2}, \\pi\\right]$$"
+        "ner": "Consider the function,\n$$\nF(x)=(x-1)^{2}+1\n$$\nThe objective is to find the derivative of the function by using the definition, and then find the\nvalue of the derivative at $F^{\\prime}(-1), F^{\\prime}(0),$ and $F^{\\prime}(2)$\n\nThe derivative of the function, $f(x),$ with respect to the variable $x,$ is the function $f^{\\prime}(x)$\nwhose value at $x$ is,\n$$\n\\begin{aligned}\nF^{\\prime}(x) &=\\lim _{h \\rightarrow 0} \\frac{F(x+h)-F(x)}{h} \\\\\n&=\\lim _{h \\rightarrow 0} \\frac{\\left[(x+h-1)^{2}+1\\right]-\\left[(x-1)^{2}+1\\right]}{h} \\\\\n&=\\lim _{h \\rightarrow 0} \\frac{(x-1)^{2}+h^{2}+2 h(x-1)+1-(x-1)^{2}-1}{h} \\\\\n&=\\lim _{h \\rightarrow 0} \\frac{h^{2}+2 h(x-1)}{h} \\\\\n&=\\lim _{h \\rightarrow 0}[h+2(x-1)] \\\\\n&=2(x-1)\n\\end{aligned}\n$$\nTherefore, the derivative of the function $F(x)=(x-1)^{2}+1$ is $F^{\\prime}(x)=2(x-1)$\n\nFind the values of $F^{\\prime}$ at $x=-1,0,2$.\n$$\n\\begin{array}{l}\n\\text { At } x=-1 \\\\\n\\begin{aligned}\nF^{\\prime}(-1) &=2(-1-1) \\\\\n&=-4 \\\\\n\\text { At } x=0 & \\\\\nF^{\\prime}(0) &=2(0-1) \\\\\n&=-2 \\\\\n\\text { At } x=& 2 \\\\\nF^{\\prime}(2) &=2(2-1) \\\\\n&=2\n\\end{aligned}\n\\end{array}\n$$"
     },
     "id": 1,
     "task_path": "../examples/named_entity/tasks.json"
